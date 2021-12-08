@@ -13,4 +13,5 @@ app = FastAPI()
 
 @app.post('/users/')
 async def create_item(user: User):
+    print(user)
     return user
